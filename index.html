@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocQue – Find the right doctor</title>
+<meta name="description" content="DocQue brings doctor discovery, clinic appointments and online chat consultations together on one platform.">
+<link rel="icon" href="docque-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     1. CSS STYLING
+     ============================================================ -->
+<style>
+:root{
+  --bg:#05070A; --ink:#fff; --muted:#9FB0BC; --soft:#B8C4CE; --dim:#6F808D;
+  --accent:#9CD3E8;               /* change this one value to re-colour the site */
+  --card:#0B1117; --card2:#111A22; --line:#1B2630; --line2:#26323C;
+  --serif:'Instrument Serif',serif; --sans:Inter,sans-serif; --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s,border-color .25s,opacity .25s}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+img{max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.sec{max-width:1240px;margin:0 auto;padding:88px 32px 0}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.k{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.h{font-family:var(--serif);font-weight:400;line-height:1.05;margin:14px 0 20px;font-size:clamp(36px,5vw,56px);max-width:780px}
+.h.sm{font-size:clamp(30px,3.6vw,40px)}
+em{font-style:italic}
+.p{color:var(--muted);margin:0 0 14px;max-width:700px}
+.ul{margin:0;padding-left:20px;color:var(--muted)}
+.ul li{margin:8px 0}.ul li::marker{color:var(--accent)}
+
+/* hero */
+.hero{position:relative}
+.beam{position:absolute;inset:0 0 auto 0;height:1000px;pointer-events:none;
+  background:radial-gradient(ellipse 45% 55% at 50% 78%,rgba(156,211,232,.42),transparent 70%),
+             repeating-linear-gradient(90deg,rgba(156,211,232,.07) 0 2px,transparent 2px 7px);
+  -webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent);
+  animation:pulse 5s ease-in-out infinite}
+nav{position:relative;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:22px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:18px}
+.brand img{height:34px;width:auto;transition:transform .5s}
+.brand:hover img{transform:rotate(-10deg) scale(1.12)}
+.links{display:flex;flex-wrap:wrap;gap:26px;font-family:var(--mono);font-size:13px;color:var(--soft)}
+.links a:hover{color:#fff}
+.pill{display:flex;align-items:center;gap:6px;border:1px solid var(--line2);border-radius:999px;padding:5px}
+.pill a:first-child{font-family:var(--mono);font-size:13px;padding:8px 16px}
+.btn-w{background:#fff;color:var(--bg);font-weight:600;font-size:14px;padding:9px 20px;border-radius:999px}
+.hero-grid{position:relative;display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start;justify-content:center;padding-top:48px}
+.stat{flex:1 1 170px;padding-top:70px}
+.stat.r{text-align:right}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:50px;line-height:1;transition:color .3s,translate .3s}
+.stat b:hover{color:var(--accent);translate:6px 0}
+.stat span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:#8FA0AD;text-transform:uppercase;margin:6px 0 34px}
+.stat span:last-child{margin-bottom:0}
+.hc{flex:2 1 520px;text-align:center;order:2}.stat.l{order:1}.stat.r{order:3}
+.hc>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.hc>:nth-child(2){animation-delay:.12s}.hc>:nth-child(3){animation-delay:.24s}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(46px,7.4vw,88px);line-height:.98;margin:0 0 26px;letter-spacing:-.01em}
+h1 em{background:linear-gradient(90deg,var(--accent),#fff,var(--accent));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite}
+.lead{font-family:var(--mono);font-size:14px;color:var(--soft);max-width:480px;margin:0 auto 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.b1{background:var(--accent);color:var(--bg);font-weight:600;padding:15px 30px;border-radius:999px}
+.b2{border:1px solid #2B3844;background:rgba(255,255,255,.04);font-weight:500;padding:14px 28px;border-radius:999px}
+.b1:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(156,211,232,.65)}
+.b2:hover,.btn-w:hover{transform:translateY(-2px);border-color:var(--accent);background:rgba(156,211,232,.12)}
+.btn-w:hover{background:#fff;opacity:.85}
+
+/* sample cards */
+.mocks{position:relative;max-width:1100px;margin:64px auto 0;padding:0 32px;display:flex;flex-wrap:wrap;gap:22px;justify-content:center;align-items:flex-end}
+.mc{flex:1 1 300px;max-width:350px;background:rgba(12,18,24,.9);border:1px solid #1E2A34;border-radius:22px;padding:22px;transition:scale .3s,box-shadow .3s,border-color .3s;animation:float 6s ease-in-out infinite}
+.mc:nth-child(1){rotate:-3deg}.mc:nth-child(3){rotate:3deg;animation-delay:-4s}.mc:nth-child(2){max-width:380px;padding:24px;box-shadow:0 0 80px rgba(156,211,232,.18);animation-delay:-2s}
+.mc:hover{scale:1.04;border-color:var(--accent);box-shadow:0 0 50px rgba(156,211,232,.25)}
+.ml{font-family:var(--mono);font-size:12px;color:var(--soft);margin-bottom:14px}
+.ml i{color:var(--accent);font-style:normal}
+.row{display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:14px;padding:12px;margin-bottom:8px;font-size:14px;transition:background .25s,transform .25s}
+.row:last-child{margin-bottom:0}.row:hover{background:#1A2631;transform:translateX(4px)}
+.row small{display:block;font-size:12px;color:#8FA0AD}
+.av{width:30px;height:30px;border-radius:50%;background:#243340;display:inline-flex;align-items:center;justify-content:center;font-size:11px;flex:none}
+.chip{border:1px solid var(--accent);color:var(--accent);font-size:12px;padding:4px 12px;border-radius:999px;transition:background .2s,color .2s}
+.chip:hover{background:var(--accent);color:var(--bg)}
+.row .grow{flex:1}
+.book h3{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1.1;margin:0}
+.book .sub{font-size:14px;color:#8FA0AD;margin:6px 0 18px}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.bk{text-align:center;background:var(--accent);color:var(--bg);border-radius:999px;padding:13px;font-weight:600;font-size:15px}
+.bub{border-radius:16px;padding:10px 14px;font-size:14px;margin-bottom:8px;max-width:85%;background:var(--card2)}
+.bub.me{background:var(--accent);color:var(--bg);margin-left:auto}
+.input{border:1px solid var(--line2);border-radius:999px;padding:10px 16px;font-size:13px;color:var(--dim);margin-top:14px}
+
+/* cards & sections */
+.c{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.c:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 14px 40px rgba(156,211,232,.15)}
+.c.big{padding:36px}
+.c.light{background:#fff;color:var(--bg);border-color:#fff}
+.c.light .k{color:#3C7A92}.c.light .ul,.c.light .p{color:#36424C}
+.steps{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.sn{font-family:var(--serif);font-size:44px;line-height:1;color:var(--accent);display:inline-block;transition:scale .3s;transform-origin:left}
+.c:hover .sn{scale:1.12}
+.c h3{font-size:19px;margin:12px 0 6px;font-weight:600}
+.c .p{margin:0}
+.two{grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:48px}
+.closing{position:relative;margin-top:88px;padding:90px 32px 80px;text-align:center}
+.closing::after{content:"";position:absolute;inset:auto 0 0 0;height:420px;pointer-events:none;background:radial-gradient(ellipse 50% 60% at 50% 100%,rgba(156,211,232,.3),transparent 70%)}
+.closing .in{position:relative;z-index:1;max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:48px;justify-content:center}
+.closing .in>div{flex:1 1 380px}
+.closing h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.6vw,52px);line-height:1.05;margin:0 0 14px}
+.closing h2 em{color:var(--accent)}
+.closing p{color:var(--soft);margin:0}
+.contact{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.contact .k{color:#8FA0AD}.contact .v{margin-top:8px;word-break:break-word}
+footer{border-top:1px solid #141D25;padding:26px 32px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:40px}
+
+/* motion */
+@keyframes float{50%{translate:0 -10px}}
+@keyframes pulse{50%{opacity:.6}}
+@keyframes rise{from{opacity:0;translate:0 30px}to{opacity:1;translate:0 0}}
+@keyframes shine{to{background-position:200% 0}}
+.js .rv{opacity:0;translate:0 40px;transition:opacity .7s ease,translate .7s ease}
+.js .rv.in{opacity:1;translate:0 0}
+
+@media(max-width:900px){.hc{order:1}.stat.l{order:2}.stat.r{order:3;text-align:left}.stat{padding-top:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;translate:0 0}}
+</style>
+</head>
+
+<!-- ============================================================
+     2. HTML STRUCTURE
+     (lists and contact details are filled from the JSON in section 4)
+     ============================================================ -->
+<body>
+<header class="hero">
+  <div class="beam"></div>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top"><img src="docque-logo.png" alt="DocQue logo">DocQue</a>
+      <div class="links" id="nav-links"></div>
+      <div class="pill"><a href="#doctors">For clinics</a><a class="btn-w" href="#contact">Contact us</a></div>
+    </nav>
+
+    <div class="hero-grid" id="top">
+      <div class="stat l"><b>Discover</b><span>doctors &amp; clinics</span><b>Book</b><span>clinic appointments</span></div>
+      <div class="hc">
+        <h1>Find the right doctor. <em>Connect with ease.</em></h1>
+        <p class="lead">DocQue brings doctor discovery, clinic appointments and online chat consultations together on one platform.</p>
+        <div class="cta"><a class="b1" href="#patients">I’m a patient</a><a class="b2" href="#doctors">I’m a doctor or clinic</a></div>
+      </div>
+      <div class="stat r"><b>Chat</b><span>online consultations</span><b>One</b><span>connected platform</span></div>
+    </div>
+  </div>
+
+  <div class="mocks" aria-label="Sample screens">
+    <div class="mc">
+      <div class="ml"><i>●</i> Discover doctors · sample</div>
+      <div class="row"><span class="av">DR</span><div class="grow">Dr. Abdul Hanan<small>Cardiologist</small></div><span class="chip">4.9</span></div>
+      <div class="row"><span class="av">DR</span><div class="grow">Dr. Ramesh<small>Endocrinologist</small></div><span class="chip">4.5</span></div>
+      <div class="row"><span class="av">CL</span><div class="grow">Maveric Clinic<small>New Delhi</small></div></div>
+    </div>
+    <div class="mc book">
+      <div class="ml"><i>●</i> Book an appointment · sample</div>
+      <h3>Docque Clinic</h3>
+      <div class="sub">Dr. Abdul Hanan · Cardiologist</div>
+      <div class="slots"><span class="chip">10 am - 10 : 15 am</span><span class="chip">12 : 30 pm - 12 : 45 pm</span></div>
+      <div class="bk">Book appointment</div>
+    </div>
+    <div class="mc">
+      <div class="ml"><i>●</i> Online chat · sample</div>
+      <div class="bub">Hello doctor, I’d like some advice.</div>
+      <div class="bub me">Hello, please tell me what’s concerning you.</div>
+      <div class="input">Type your message…</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="sec rv" id="about">
+    <div class="k">About DocQue</div>
+    <h2 class="h">Healthcare that is easier to reach.</h2>
+    <div id="about-text"></div>
+    <div class="c" style="margin-top:22px"><div class="k" style="margin-bottom:8px">What patients can do</div><ul class="ul" id="can-do" style="columns:2 280px;column-gap:40px"></ul></div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="k rv">How it works</div>
+    <h2 class="h rv">Five simple steps.</h2>
+    <div class="g steps" id="steps"></div>
+  </section>
+
+  <section class="sec g">
+    <div class="c big rv"><div class="k">Clinic appointments</div>
+      <h2 class="h sm">Finding a doctor shouldn’t be complicated.</h2>
+      <p class="p" id="appt-intro"></p><ul class="ul" id="appt-list"></ul></div>
+    <div class="c big rv"><div class="k">Online consultation through chat</div>
+      <h2 class="h sm">Not every visit needs a trip.</h2>
+      <p class="p" id="chat-intro"></p><ul class="ul" id="chat-list"></ul>
+      <p class="p" id="chat-note" style="margin-top:18px;font-size:14px"></p></div>
+  </section>
+
+  <section class="sec g">
+    <div class="c big rv" id="patients"><div class="k">For patients</div>
+      <h2 class="h sm">Healthcare made more accessible and convenient.</h2><ul class="ul" id="patient-list"></ul></div>
+    <div class="c big light rv" id="doctors"><div class="k">For doctors and clinics</div>
+      <h2 class="h sm">A better way to connect with patients.</h2><ul class="ul" id="doctor-list"></ul>
+      <p class="p" id="doctor-note" style="margin-top:18px;font-size:14px"></p></div>
+  </section>
+
+  <section class="sec g two">
+    <div class="rv"><div class="k">Why DocQue?</div>
+      <h2 class="h sm">Technology should make healthcare easier, not more complicated.</h2><div id="why"></div></div>
+    <div class="rv"><div class="k">Our vision</div>
+      <h2 class="h sm">A connected healthcare ecosystem.</h2><div id="vision"></div></div>
+  </section>
+
+  <section class="closing rv">
+    <div class="in">
+      <div><h2>Your healthcare journey starts with <em>finding the right doctor.</em></h2><p>Discover doctors, explore clinics and connect with healthcare professionals through DocQue.</p></div>
+      <div><h2>Be part of a more <em>connected ecosystem.</em></h2><p>Join DocQue and make your services more accessible to patients.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact" style="padding-bottom:40px">
+    <div class="k rv">Contact us</div>
+    <h2 class="h rv">Questions, or interested in partnering with us?</h2>
+    <p class="p rv" style="margin-bottom:32px">We would love to hear from you.</p>
+    <div class="g contact" id="contact-grid"></div>
+  </section>
+</main>
+
+<footer>DocQue · <span id="year"></span></footer>
+
+<!-- ============================================================
+     3. EMBEDDED JSON DATA  (edit the text here, no code changes needed)
+     ============================================================ -->
+<script type="application/json" id="site-data">
+{
+  "nav": [
+    { "label": "How it works", "href": "#how" },
+    { "label": "For patients", "href": "#patients" },
+    { "label": "For doctors", "href": "#doctors" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "about": [
+    "DocQue is a healthcare technology platform designed to simplify how people discover doctors, connect with healthcare professionals and access medical services.",
+    "We aim to bridge the gap between patients and doctors by making healthcare more accessible, convenient and connected, whether someone wants to visit a doctor in person or consult online."
+  ],
+  "canDo": [
+    "Discover doctors and clinics",
+    "Explore doctor profiles and available information",
+    "Check ratings and reviews",
+    "Book appointments at clinics",
+    "Connect with doctors through online chat consultations",
+    "Access healthcare more conveniently, without always needing an immediate physical visit"
+  ],
+  "steps": [
+    { "title": "Discover", "text": "Find doctors and clinics based on your healthcare needs and location." },
+    { "title": "Explore", "text": "View profiles, specialisations, clinic information and ratings to make informed decisions." },
+    { "title": "Choose", "text": "Pick an in-person clinic visit or an online consultation through chat." },
+    { "title": "Connect", "text": "Book your clinic appointment or connect with a doctor through online consultation." },
+    { "title": "Get healthcare", "text": "Receive the right guidance through the consultation method you chose." }
+  ],
+  "appointments": {
+    "intro": "DocQue helps patients discover clinics, explore doctors and book appointments conveniently.",
+    "items": ["Find doctors nearby", "Explore clinic information", "Check available appointment options", "Book appointments without unnecessary complications", "Plan clinic visits more efficiently"]
+  },
+  "chat": {
+    "intro": "DocQue aims to make connecting with doctors easier through online chat consultations.",
+    "items": ["Discover doctors offering online consultations", "Start a consultation through chat", "Explain your health concerns", "Communicate directly with the doctor", "Receive medical guidance remotely"],
+    "note": "Online consultations are not a replacement for emergency medical care, or for physical examinations when required."
+  },
+  "patients": [
+    "Find suitable doctors and clinics",
+    "Make informed decisions through doctor information and ratings",
+    "Reduce the inconvenience of finding and accessing healthcare",
+    "Book clinic appointments",
+    "Connect with doctors through online chat consultations",
+    "Access healthcare services through one platform"
+  ],
+  "doctors": {
+    "items": ["Establish an online presence", "Improve visibility among potential patients", "Reach patients beyond your existing network", "Receive appointment bookings through the platform", "Offer online chat consultations", "Build stronger connections with patients"],
+    "note": "We aim to support healthcare professionals with digital tools that make patient access and communication easier."
+  },
+  "why": [
+    "Healthcare is an essential part of everyone’s life, but accessing it can be inconvenient. Patients may struggle to find the right doctor, spend considerable time arranging visits or find it hard to connect with healthcare professionals.",
+    "DocQue aims to address these challenges by bringing doctor discovery, clinic appointments and online consultations together."
+  ],
+  "vision": [
+    "We want discovering doctors, accessing clinics and communicating with healthcare professionals to become simple and convenient.",
+    "We want to make quality healthcare more accessible, particularly in growing towns and underserved communities. The future of healthcare is not just about hospitals and clinics. It is also about making the connection between patients and doctors easier."
+  ],
+  "contact": [
+    { "label": "Email", "value": "docquehelp@gmail.com", "href": "mailto:docquehelp@gmail.com" },
+    { "label": "Phone / WhatsApp", "value": "8590608258", "href": "tel:8590608258" },
+    { "label": "Social", "value": "@docqueapp" }
+  ]
+}
+</script>
+
+<!-- ============================================================
+     4. JAVASCRIPT RUNTIME
+     Reads the JSON above, builds the lists, runs the scroll reveal.
+     ============================================================ -->
+<script>
+(function () {
+  document.documentElement.classList.add('js');
+  var data = JSON.parse(document.getElementById('site-data').textContent);
+  var $ = function (id) { return document.getElementById(id); };
+
+  function el(tag, text, attrs) {
+    var n = document.createElement(tag);
+    if (text != null) n.textContent = text;
+    for (var k in (attrs || {})) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+  function fillList(id, items) {
+    var ul = $(id);
+    items.forEach(function (t) { ul.appendChild(el('li', t)); });
+  }
+  function fillParas(id, items) {
+    items.forEach(function (t) { $(id).appendChild(el('p', t, { 'class': 'p' })); });
+  }
+
+  // nav
+  data.nav.forEach(function (l) { $('nav-links').appendChild(el('a', l.label, { href: l.href })); });
+
+  // text blocks and lists
+  fillParas('about-text', data.about);
+  fillList('can-do', data.canDo);
+  $('appt-intro').textContent = data.appointments.intro;
+  fillList('appt-list', data.appointments.items);
+  $('chat-intro').textContent = data.chat.intro;
+  fillList('chat-list', data.chat.items);
+  $('chat-note').textContent = data.chat.note;
+  fillList('patient-list', data.patients);
+  fillList('doctor-list', data.doctors.items);
+  $('doctor-note').textContent = data.doctors.note;
+  fillParas('why', data.why);
+  fillParas('vision', data.vision);
+
+  // steps
+  data.steps.forEach(function (s, i) {
+    var c = el('div', null, { 'class': 'c rv' });
+    c.appendChild(el('div', String(i + 1).padStart(2, '0'), { 'class': 'sn' }));
+    c.appendChild(el('h3', s.title));
+    c.appendChild(el('p', s.text, { 'class': 'p' }));
+    $('steps').appendChild(c);
+  });
+
+  // contact cards
+  data.contact.forEach(function (x) {
+    var c = el('div', null, { 'class': 'c rv' });
+    c.appendChild(el('div', x.label, { 'class': 'k' }));
+    var v = el('div', null, { 'class': 'v' });
+    v.appendChild(x.href ? el('a', x.value, { href: x.href }) : document.createTextNode(x.value));
+    c.appendChild(v);
+    $('contact-grid').appendChild(c);
+  });
+
+  // footer year
+  $('year').textContent = new Date().getFullYear();
+
+  // scroll reveal
+  var items = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (n) { n.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(function (n) { io.observe(n); });
+})();
+</script>
+</body>
+</html>
