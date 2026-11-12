@@ -3,7 +3,7 @@
    >>> EDIT ONLY THESE TWO LINES <<<
    These two values are meant to be public. Real secrets never go in this file.
    ============================================================ */
-var GA_ID = "";          // Google Analytics Measurement ID, e.g. "G-ABC123XYZ"  (leave "" until you have it)
+var GA_ID = "G-89L5E8VEVW";          // Google Analytics Measurement ID, e.g. "G-ABC123XYZ"  (leave "" until you have it)
 var FORM_ENDPOINT = "";  // Formspree / Web3Forms address, e.g. "https://formspree.io/f/abcdwxyz" (leave "" to use email instead)
 var CONTACT_EMAIL = "docquehelp@gmail.com";
 
