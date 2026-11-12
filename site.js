@@ -4,7 +4,7 @@
    These two values are meant to be public. Real secrets never go in this file.
    ============================================================ */
 var GA_ID = "G-GS5MHVNF2K";          // Google Analytics Measurement ID, e.g. "G-ABC123XYZ"  (leave "" until you have it)
-var FORM_ENDPOINT = "";  // Formspree / Web3Forms address, e.g. "https://formspree.io/f/abcdwxyz" (leave "" to use email instead)
+var FORM_ENDPOINT = "https://formspree.io/f/mppdzkal";  // Formspree / Web3Forms address, e.g. "https://formspree.io/f/abcdwxyz" (leave "" to use email instead)
 var CONTACT_EMAIL = "docquehelp@gmail.com";
 
 (function () {
