@@ -1,693 +1,187 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DocQue</title>
-<!--
-Some of the files packed into this page (the "__bundler/manifest" data in this file, unpacked by the page’s script when it opens) are font files downloaded unchanged from Google Fonts (fonts.gstatic.com) when the page was saved. Google Fonts serves each family in pieces, one file per range of characters, so these may not be complete families. Each family’s license follows and still applies to its files. If you pass this file on, keep this comment in it.
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocQue – Find Doctors, Book Appointments, Consult Online</title>
+<meta name="description" content="DocQue helps patients discover doctors and clinics, book clinic appointments and connect with doctors through online chat consultations.">
+<link rel="canonical" href="https://www.docque.co.in/">
+<meta name="theme-color" content="#05070A">
 
-Inter
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DocQue">
+<meta property="og:title" content="DocQue – Find the right doctor. Connect with ease.">
+<meta property="og:description" content="Discover doctors and clinics, book appointments and consult online through chat, all on one platform.">
+<meta property="og:url" content="https://www.docque.co.in/">
+<meta property="og:image" content="https://www.docque.co.in/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DocQue logo with the line: Find the right doctor. Connect with ease.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DocQue – Find the right doctor. Connect with ease.">
+<meta name="twitter:description" content="Discover doctors and clinics, book appointments and consult online through chat.">
+<meta name="twitter:image" content="https://www.docque.co.in/social-preview.png">
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-https://scripts.sil.org/OFL
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DocQue","url":"https://www.docque.co.in/","logo":"https://www.docque.co.in/apple-touch-icon.png","email":"docquehelp@gmail.com"}
+</script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
------------------------------------------------------------
-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
------------------------------------------------------------
+<header class="hero">
+  <div class="beam"></div>
+  <div class="wrap">
+    <nav class="top" aria-label="Main">
+      <a class="brand" href="/"><img src="/assets/docque-wordmark.png" alt="DocQue" height="34"></a>
+      <div class="links">
+        <a href="#how">How it works</a>
+        <a href="#patients">For patients</a>
+        <a href="#doctors">For doctors</a>
+        <a href="/blog">Blog</a>
+      </div>
+      <a class="btn-w" href="#contact">Contact us</a>
+    </nav>
 
-PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.
+    <div class="hero-grid">
+      <div class="stat l"><b>Discover</b><span>doctors &amp; clinics</span><b>Book</b><span>clinic appointments</span></div>
+      <div class="hc">
+        <h1>Find the right doctor. <em>Connect with ease.</em></h1>
+        <p class="lead">DocQue brings doctor discovery, clinic appointments and online chat consultations together on one platform.</p>
+        <div class="cta"><a class="b1" href="#contact">Contact us</a><a class="tl" href="#how">See how it works</a></div>
+      </div>
+      <div class="stat r"><b>Chat</b><span>online consultations</span><b>One</b><span>connected platform</span></div>
+    </div>
+  </div>
 
-The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.
+  <div class="mocks" aria-hidden="true">
+    <div class="mc">
+      <div class="ml"><i>●</i> Discover doctors · sample</div>
+      <div class="row"><span class="av">DR</span><div class="grow">Dr. Abdul Hanan<small>Cardiologist</small></div><span class="chip">4.9</span></div>
+      <div class="row"><span class="av">DR</span><div class="grow">Dr. Ramesh<small>Endocrinologist</small></div><span class="chip">4.5</span></div>
+      <div class="row"><span class="av">CL</span><div class="grow">Maveric Clinic<small>New Delhi</small></div></div>
+    </div>
+    <div class="mc book">
+      <div class="ml"><i>●</i> Book an appointment · sample</div>
+      <h3>Docque Clinic</h3>
+      <div class="sub">Dr. Abdul Hanan · Cardiologist</div>
+      <div class="slots"><span class="chip">10 am - 10 : 15 am</span><span class="chip">12 : 30 pm - 12 : 45 pm</span></div>
+      <div class="bk">Book appointment</div>
+    </div>
+    <div class="mc">
+      <div class="ml"><i>●</i> Online chat · sample</div>
+      <div class="bub">Hello doctor, I’d like some advice.</div>
+      <div class="bub me">Hello, please tell me what’s concerning you.</div>
+      <div class="input">Type your message…</div>
+    </div>
+  </div>
+</header>
 
-DEFINITIONS
-"Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.
+<main id="main">
+  <section class="sec rv">
+    <div class="k">About DocQue</div>
+    <h2 class="h">Healthcare that is easier to reach.</h2>
+    <p class="p">DocQue is a healthcare technology platform designed to simplify how people discover doctors, connect with healthcare professionals and access medical services.</p>
+    <p class="p" style="margin-bottom:36px">We aim to bridge the gap between patients and doctors by making healthcare more accessible, convenient and connected, whether someone wants to visit a doctor in person or consult online.</p>
+    <div class="c"><div class="k" style="margin-bottom:8px">What patients can do</div>
+      <ul class="ul" style="columns:2 280px;column-gap:40px"><li>Discover doctors and clinics</li><li>Explore doctor profiles and available information</li><li>Check ratings and reviews</li><li>Book appointments at clinics</li><li>Connect with doctors through online chat consultations</li><li>Access healthcare more conveniently, without always needing an immediate physical visit</li></ul></div>
+  </section>
 
-"Reserved Font Name" refers to any names specified as such after the
-copyright statement(s).
+  <section class="sec" id="how">
+    <div class="k rv">How it works</div>
+    <h2 class="h rv">Five simple steps.</h2>
+    <div class="g steps">
+      <div class="c rv"><div class="sn">01</div><h3>Discover</h3><p class="p">Find doctors and clinics based on your healthcare needs and location.</p></div>
+      <div class="c rv"><div class="sn">02</div><h3>Explore</h3><p class="p">View profiles, specialisations, clinic information and ratings to make informed decisions.</p></div>
+      <div class="c rv"><div class="sn">03</div><h3>Choose</h3><p class="p">Pick an in-person clinic visit or an online consultation through chat.</p></div>
+      <div class="c rv"><div class="sn">04</div><h3>Connect</h3><p class="p">Book your clinic appointment or connect with a doctor through online consultation.</p></div>
+      <div class="c rv"><div class="sn">05</div><h3>Get healthcare</h3><p class="p">Receive the right guidance through the consultation method you chose.</p></div>
+    </div>
+  </section>
 
-"Original Version" refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).
+  <section class="sec g">
+    <div class="c big rv"><div class="k">Clinic appointments</div>
+      <h2 class="h sm">Finding a doctor shouldn’t be complicated.</h2>
+      <p class="p">DocQue helps patients discover clinics, explore doctors and book appointments conveniently.</p>
+      <ul class="ul"><li>Find doctors nearby</li><li>Explore clinic information</li><li>Check available appointment options</li><li>Book appointments without unnecessary complications</li><li>Plan clinic visits more efficiently</li></ul></div>
+    <div class="c big rv"><div class="k">Online consultation through chat</div>
+      <h2 class="h sm">Not every visit needs a trip.</h2>
+      <p class="p">DocQue aims to make connecting with doctors easier through online chat consultations.</p>
+      <ul class="ul"><li>Discover doctors offering online consultations</li><li>Start a consultation through chat</li><li>Explain your health concerns</li><li>Communicate directly with the doctor</li><li>Receive medical guidance remotely</li></ul>
+      <p class="p" style="margin-top:18px;font-size:14px">Online consultations are not a replacement for emergency medical care, or for physical examinations when required.</p></div>
+  </section>
 
-"Modified Version" refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.
+  <section class="sec g">
+    <div class="c big rv" id="patients"><div class="k">For patients</div>
+      <h2 class="h sm">Healthcare made more accessible and convenient.</h2>
+      <ul class="ul"><li>Find suitable doctors and clinics</li><li>Make informed decisions through doctor information and ratings</li><li>Reduce the inconvenience of finding and accessing healthcare</li><li>Book clinic appointments</li><li>Connect with doctors through online chat consultations</li><li>Access healthcare services through one platform</li></ul></div>
+    <div class="c big light rv" id="doctors"><div class="k">For doctors and clinics</div>
+      <h2 class="h sm">A better way to connect with patients.</h2>
+      <ul class="ul"><li>Establish an online presence</li><li>Improve visibility among potential patients</li><li>Reach patients beyond your existing network</li><li>Receive appointment bookings through the platform</li><li>Offer online chat consultations</li><li>Build stronger connections with patients</li></ul>
+      <p class="p" style="margin-top:18px;font-size:14px">We aim to support healthcare professionals with digital tools that make patient access and communication easier.</p></div>
+  </section>
 
-"Author" refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.
+  <section class="sec g two">
+    <div class="rv"><div class="k">Why DocQue?</div>
+      <h2 class="h sm">Technology should make healthcare easier, not more complicated.</h2>
+      <p class="p">Healthcare is an essential part of everyone’s life, but accessing it can be inconvenient. Patients may struggle to find the right doctor, spend considerable time arranging visits or find it hard to connect with healthcare professionals.</p>
+      <p class="p">DocQue aims to address these challenges by bringing doctor discovery, clinic appointments and online consultations together.</p></div>
+    <div class="rv"><div class="k">Our vision</div>
+      <h2 class="h sm">A connected healthcare ecosystem.</h2>
+      <p class="p">We want discovering doctors, accessing clinics and communicating with healthcare professionals to become simple and convenient.</p>
+      <p class="p">We want to make quality healthcare more accessible, particularly in growing towns and underserved communities. The future of healthcare is not just about hospitals and clinics. It is also about making the connection between patients and doctors easier.</p></div>
+  </section>
 
-PERMISSION & CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:
+  <section class="closing rv">
+    <div class="in">
+      <div><h2>Your healthcare journey starts with <em>finding the right doctor.</em></h2><p>Discover doctors, explore clinics and connect with healthcare professionals through DocQue.</p></div>
+      <div><h2>Be part of a more <em>connected ecosystem.</em></h2><p>Join DocQue and make your services more accessible to patients.</p></div>
+    </div>
+    <div class="cta"><a class="b1" href="#contact">Contact us</a></div>
+  </section>
 
-1) Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.
+  <section class="sec" id="contact" style="padding-bottom:40px">
+    <div class="k rv">Contact us</div>
+    <h2 class="h rv">Questions, or interested in partnering with us?</h2>
+    <p class="p rv" style="margin-bottom:32px">We would love to hear from you.</p>
+    <div class="cwrap">
+      <div class="cinfo">
+        <div class="c"><div class="k">Email</div><div class="v"><a href="mailto:docquehelp@gmail.com">docquehelp@gmail.com</a></div></div>
+        <div class="c"><div class="k">Phone / WhatsApp</div><div class="v"><a href="tel:+918590608258">8590608258</a></div></div>
+        <div class="c"><div class="k">Social</div><div class="v">@docqueapp</div></div>
+      </div>
+      <form class="f" id="contact-form" novalidate>
+        <div class="fld"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name"><span class="err" id="err-name"></span></div>
+        <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="err-email"><span class="err" id="err-email"></span></div>
+        <div class="fld"><label for="f-role">I am a</label><select id="f-role" name="role"><option>Patient</option><option>Doctor</option><option>Clinic</option><option>Other</option></select></div>
+        <div class="fld"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required aria-describedby="err-message"></textarea><span class="err" id="err-message"></span></div>
+        <div class="hp" aria-hidden="true"><label>Leave this empty<input name="company" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <button class="b1" type="submit">Send message</button>
+        <p class="fstat" id="form-status" role="status" aria-live="polite"></p>
+        <p class="fnote">By sending this you agree to our <a href="/privacy">Privacy Policy</a>. Please don’t send medical details or emergencies through this form.</p>
+      </form>
+    </div>
+  </section>
+</main>
 
-2) Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.
+<footer class="site">
+  <span>© <span id="year">2026</span> DocQue</span>
+  <a href="/blog">Blog</a>
+  <a href="/privacy">Privacy Policy</a>
+  <a href="/terms">Terms &amp; Conditions</a>
+  <button type="button" data-cookie-settings>Cookie settings</button>
+</footer>
 
-3) No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name as
-presented to the users.
-
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.
-
-5) The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.
-
-TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.
-
-DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.
-
-Space Grotesk
-
-Copyright 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
-
-
------------------------------------------------------------
-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
------------------------------------------------------------
-
-PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.
-
-The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.
-
-DEFINITIONS
-"Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.
-
-"Reserved Font Name" refers to any names specified as such after the
-copyright statement(s).
-
-"Original Version" refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).
-
-"Modified Version" refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.
-
-"Author" refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.
-
-PERMISSION & CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:
-
-1) Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.
-
-2) Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.
-
-3) No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name as
-presented to the users.
-
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.
-
-5) The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.
-
-TERMINATION
-This license becomes null and void if any of the above conditions are
-not met.
-
-DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.
-
--->
-<style>/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/eaa0d3fb-8463-4e85-87ed-fb1d4ef73375.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/39a297ec-8542-43f5-80c3-9267f8fd9cbe.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/6f8dd1fa-da20-44c4-943d-aec45d59cb67.woff2") format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/2d30088a-b15f-47f2-88c9-6f7816b31095.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/805bc997-a66d-4c7a-99a1-1f82fa32c2ec.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/8f1b8dbc-0406-40b6-abfd-0188817e3e3d.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/243f54ff-c970-4de2-802d-2941e268399d.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/eaa0d3fb-8463-4e85-87ed-fb1d4ef73375.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/39a297ec-8542-43f5-80c3-9267f8fd9cbe.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/6f8dd1fa-da20-44c4-943d-aec45d59cb67.woff2") format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/2d30088a-b15f-47f2-88c9-6f7816b31095.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/805bc997-a66d-4c7a-99a1-1f82fa32c2ec.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/8f1b8dbc-0406-40b6-abfd-0188817e3e3d.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/243f54ff-c970-4de2-802d-2941e268399d.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/eaa0d3fb-8463-4e85-87ed-fb1d4ef73375.woff2") format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/39a297ec-8542-43f5-80c3-9267f8fd9cbe.woff2") format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/6f8dd1fa-da20-44c4-943d-aec45d59cb67.woff2") format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/2d30088a-b15f-47f2-88c9-6f7816b31095.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/805bc997-a66d-4c7a-99a1-1f82fa32c2ec.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/8f1b8dbc-0406-40b6-abfd-0188817e3e3d.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/243f54ff-c970-4de2-802d-2941e268399d.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("assets/bcd6602d-bdce-46b3-ba8d-ea95d8e2cfb9.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/bcd6602d-bdce-46b3-ba8d-ea95d8e2cfb9.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("assets/bcd6602d-bdce-46b3-ba8d-ea95d8e2cfb9.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("assets/bcd6602d-bdce-46b3-ba8d-ea95d8e2cfb9.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
-body{margin:0;background:#05070A}
-em{font-style:normal}
-a{color:inherit;text-decoration:none}
-a:hover{opacity:.8}
-.hc{order:2}.sl{order:1}.sr{order:3}
-@media(max-width:900px){.hc{order:1}.sl{order:2}.sr{order:3;text-align:left!important}}
-.sec{max-width:1240px;margin:0 auto;padding:88px 32px 0}
-.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.c{background:#0B1117;border:1px solid #1B2630;border-radius:22px;padding:30px}
-.k{font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
-.h{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:-.02em;line-height:1.08;margin:14px 0 20px;font-size:clamp(32px,4.4vw,48px);max-width:780px}
-.p{color:#9FB0BC;margin:0 0 14px;max-width:700px}
-.ul{margin:0;padding-left:20px;color:#9FB0BC}.ul li{margin:8px 0}li::marker{color:#9CD3E8}
-.sn{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:38px;line-height:1}
-.st{font-family:Inter,sans-serif;font-weight:600;font-size:38px;line-height:1.15;letter-spacing:-.035em}
-.sm{font-family:Inter,sans-serif;font-weight:400;font-size:13px;line-height:1.5;letter-spacing:0;color:#9FB0BC;margin:6px 0 30px}
-.mc{background:rgba(12,18,24,.9);border:1px solid #1E2A34;border-radius:22px;padding:22px;box-sizing:border-box;flex:1 1 300px;max-width:350px}
-.ml{font-family:'Space Grotesk',sans-serif;font-size:12px;color:#B8C4CE;margin-bottom:14px}
-.row{display:flex;align-items:center;gap:10px;background:#111A22;border-radius:14px;padding:12px;margin-bottom:8px;font-size:14px}
-.av{width:30px;height:30px;border-radius:50%;background:#243340;display:inline-flex;align-items:center;justify-content:center;font-size:11px}
-.chip{border:1px solid #9CD3E8;color:#9CD3E8;font-size:12px;padding:4px 12px;border-radius:999px}
-.bub{border-radius:16px;padding:10px 14px;font-size:14px;margin-bottom:8px;max-width:85%}
-html{scroll-behavior:smooth}
-a{transition:transform .25s,box-shadow .25s,opacity .25s,background .25s,border-color .25s}
-a[href^="#"]:hover{transform:translateY(-2px);opacity:1}
-.hc a:first-child:hover{box-shadow:0 0 34px rgba(156,211,232,.65)}
-.hc a:last-child:hover{background:rgba(156,211,232,.12)!important;border-color:#9CD3E8!important}
-.c{transition:transform .3s,border-color .3s,box-shadow .3s}
-.c:hover{transform:translateY(-6px);border-color:#9CD3E8;box-shadow:0 14px 40px rgba(156,211,232,.15)}
-.mc{transition:scale .3s,box-shadow .3s,border-color .3s;animation:fl 6s ease-in-out infinite}
-.mc:nth-child(2){animation-delay:-2s}.mc:nth-child(3){animation-delay:-4s}
-.mc:hover{scale:1.04;border-color:#9CD3E8;box-shadow:0 0 50px rgba(156,211,232,.25)}
-.row{transition:background .25s,transform .25s}.row:hover{background:#1A2631;transform:translateX(4px)}
-.chip{transition:background .2s,color .2s}.chip:hover{background:#9CD3E8;color:#05070A}
-.st{transition:color .3s,translate .3s}.st:hover{color:#9CD3E8;translate:6px 0}
-.sn{transition:scale .3s;transform-origin:left}.c:hover .sn{scale:1.12}
-img[alt="DocQue logo"]{transition:transform .5s}img[alt="DocQue logo"]:hover{transform:rotate(-10deg) scale(1.12)}
-.beam{animation:pulse 5s ease-in-out infinite}
-.hc>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.hc>*:nth-child(2){animation-delay:.12s}.hc>*:nth-child(3){animation-delay:.24s}
-.sl,.sr{animation:rise .9s .3s both}
-h1 em{background:linear-gradient(90deg,#9CD3E8,#fff,#9CD3E8);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sh 4s linear infinite}
-@keyframes fl{50%{translate:0 -10px}}
-@keyframes pulse{50%{opacity:.6}}
-@keyframes rise{from{opacity:0;translate:0 30px}to{opacity:1;translate:0 0}}
-@keyframes sh{to{background-position:200% 0}}
-@keyframes rv{from{opacity:0;translate:0 50px}to{opacity:1;translate:0 0}}
-@supports (animation-timeline:view()){.sec .k,.sec .h,.sec .p,.sec .c,.sec .g>div,.sec.g>div{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-
-*{box-sizing:border-box}body{font-family:Inter,sans-serif}img{max-width:100%} .g>*{min-width:0} a:focus-visible{outline:2px solid #9CD3E8;outline-offset:5px} [id]{scroll-margin-top:24px}
-@media(max-width:900px){.hero{gap:24px!important}.hc{flex-basis:100%!important}.sl,.sr{padding-top:0!important;flex:1 1 120px!important;text-align:center!important}.st{font-size:30px}.sm{margin-bottom:18px}.site-header nav{order:3;width:100%;justify-content:center;gap:12px 24px!important}.samples{align-items:stretch!important}.mc{transform:none!important}}
-@media(max-width:600px){.site-header{padding:18px 20px!important;gap:18px!important}.site-header nav{justify-content:flex-start;font-size:12px!important;gap:10px 18px!important}.site-header nav a{display:inline-flex;align-items:center;min-height:44px}.header-actions a{padding:10px 12px!important;font-size:12px!important}.hero{padding:32px 20px 0!important}.hc h1{font-size:clamp(36px,10vw,54px)!important;line-height:1.06!important}.hc a{width:100%;min-height:48px}.samples{margin-top:32px!important;padding:0 20px!important;gap:16px!important}.mc{flex-basis:100%;max-width:100%!important;padding:20px!important;animation:none}.sec{padding:52px 20px 0}.g{grid-template-columns:minmax(0,1fr)!important;gap:18px!important}.c,#doctors{padding:24px!important}.h{font-size:30px!important}.ul{columns:1!important}.row>div{min-width:0}.av{flex-shrink:0}.chip{padding:4px 8px}.beam{height:800px!important}.p,.ul{font-size:15px}.site-header{align-items:center!important}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.brand{display:block;flex-shrink:0}.brand img{max-width:100%}@media(max-width:600px){.brand img{width:112px!important}.site-header{column-gap:10px!important}}
-</style></head><body>
-
-<div style="font-family: Inter, sans-serif; color: #fff; background: #05070A; line-height: 1.55; overflow: hidden">
-
-<div style="position: relative">
-<div class="beam" style="position: absolute; left: 0; right: 0; top: 0; height: 1000px; background: radial-gradient(ellipse 45% 55% at 50% 78%, rgba(156,211,232,.42), transparent 70%), repeating-linear-gradient(90deg, rgba(156,211,232,.07) 0 2px, transparent 2px 7px); -webkit-mask-image: linear-gradient(#000 40%, transparent); mask-image: linear-gradient(#000 40%, transparent)"></div>
-
-<div class="site-header" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 22px 32px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
-<a href="#" aria-label="DocQue home" class="brand"><img src="assets/docque-wordmark.png" alt="DocQue — Your doctor one tap away" style="display:block;width:140px;height:auto"></a>
-<nav aria-label="Main navigation" style="display: flex; flex-wrap: wrap; gap: 26px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; color: #B8C4CE">
-<a href="#how" style="color: #fff"><span style="color: #9CD3E8">●</span> How it works</a>
-<a href="#patients">For patients</a>
-<a href="#doctors">For doctors</a>
-<a href="#contact">Contact</a>
-</nav>
-<div class="header-actions" style="display: flex; align-items: center; gap: 6px; border: 1px solid #26323C; border-radius: 999px; padding: 5px">
-<a href="#doctors" style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; padding: 8px 16px">For clinics</a>
-<a href="#contact" style="background: #fff; color: #05070A; font-weight: 600; font-size: 14px; padding: 9px 20px; border-radius: 999px">Contact us</a>
-</div>
-</div>
-
-<div class="hero" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 48px 32px 0; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: center">
-<div class="sl" style="flex: 1 1 170px; padding-top: 70px">
-<div class="st">Discover</div><div class="sm">doctors &amp; clinics</div>
-<div class="st">Book</div><div class="sm" style="margin-bottom: 0">clinic appointments</div>
-</div>
-<div class="hc" style="flex: 2 1 520px; text-align: center">
-<h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: clamp(40px, 6.4vw, 76px); line-height: 1; margin: 0 0 26px; letter-spacing: -.03em">Find the right doctor. <em style="color: #9CD3E8">Connect with ease.</em></h1>
-<p class="hero-description" style="font-family: Inter, sans-serif; font-weight:400; font-size: 16px; line-height:1.7; color: #B8C4CE; max-width: 480px; margin: 0 auto 30px">DocQue brings doctor discovery, clinic appointments and online chat consultations together on one platform.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
-<a href="#patients" style="background: #9CD3E8; color: #05070A; font-weight: 600; padding: 15px 30px; border-radius: 999px">I’m a patient</a>
-<a href="#doctors" style="border: 1px solid #2B3844; background: rgba(255,255,255,.04); font-weight: 500; padding: 14px 28px; border-radius: 999px">I’m a doctor or clinic</a>
-</div>
-</div>
-<div class="sr" style="flex: 1 1 170px; padding-top: 70px; text-align: right">
-<div class="st">Chat</div><div class="sm">online consultations</div>
-<div class="st">One</div><div class="sm" style="margin-bottom: 0">connected platform</div>
-</div>
-</div>
-
-<div class="samples" style="position: relative; max-width: 1100px; margin: 64px auto 0; padding: 0 32px; display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; align-items: flex-end">
-<div class="mc" style="transform: rotate(-3deg)">
-<div class="ml"><span style="color: #9CD3E8">●</span> Discover doctors · sample</div>
-<div class="row"><span class="av">DR</span><div style="flex: 1"><div>Dr. Abdul Hanan</div><div style="font-size: 12px; color: #8FA0AD">Cardiologist</div></div><span class="chip">4.9</span></div>
-<div class="row"><span class="av">DR</span><div style="flex: 1"><div>Dr. Ramesh</div><div style="font-size: 12px; color: #8FA0AD">Endocrinologist</div></div><span class="chip">4.5</span></div>
-<div class="row" style="margin-bottom: 0"><span class="av">CL</span><div style="flex: 1"><div>Maveric Clinic</div><div style="font-size: 12px; color: #8FA0AD">New Delhi</div></div></div>
-</div>
-<div class="mc" style="box-shadow: 0 0 80px rgba(156,211,232,.18); max-width: 380px; padding: 24px">
-<div class="ml"><span style="color: #9CD3E8">●</span> Book an appointment · sample</div>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 28px; line-height: 1.15">Docque Clinic</div>
-<div style="font-size: 14px; color: #8FA0AD; margin: 6px 0 18px">Dr. Abdul Hanan · Cardiologist</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px"><span class="chip">10 am - 10 : 15 am</span><span class="chip">12 : 30 pm - 12 : 45 pm</span></div>
-<div style="text-align: center; background: #9CD3E8; color: #05070A; border-radius: 999px; padding: 13px; font-weight: 600; font-size: 15px">Book appointment</div>
-</div>
-<div class="mc" style="transform: rotate(3deg)">
-<div class="ml"><span style="color: #9CD3E8">●</span> Online chat · sample</div>
-<div class="bub" style="background: #111A22">Hello doctor, I’d like some advice.</div>
-<div class="bub" style="background: #9CD3E8; color: #05070A; margin-left: auto">Hello, please tell me what’s concerning you.</div>
-<div style="border: 1px solid #26323C; border-radius: 999px; padding: 10px 16px; font-size: 13px; color: #6F808D; margin-top: 14px">Type your message…</div>
-</div>
-</div>
-</div>
-
-<div class="sec">
-<div class="k" style="color: #9CD3E8">About DocQue</div>
-<h2 class="h">Healthcare that is easier to reach.</h2>
-<p class="p">DocQue is a healthcare technology platform designed to simplify how people discover doctors, connect with healthcare professionals and access medical services.</p>
-<p class="p" style="margin-bottom: 36px">We aim to bridge the gap between patients and doctors by making healthcare more accessible, convenient and connected, whether someone wants to visit a doctor in person or consult online.</p>
-<div class="c"><div class="k" style="color: #9CD3E8; margin-bottom: 8px">What patients can do</div>
-<ul class="ul" style="columns: 2 280px; column-gap: 40px"><li>Discover doctors and clinics</li><li>Explore doctor profiles and available information</li><li>Check ratings and reviews</li><li>Book appointments at clinics</li><li>Connect with doctors through online chat consultations</li><li>Access healthcare more conveniently, without always needing an immediate physical visit</li></ul></div>
-</div>
-
-<div id="how" class="sec">
-<div class="k" style="color: #9CD3E8">How it works</div>
-<h2 class="h">Five simple steps.</h2>
-<div class="g" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr))">
-<div class="c"><div class="sn" style="color: #9CD3E8">01</div><h3 style="font-size: 19px; margin: 12px 0 6px">Discover</h3><p class="p" style="margin: 0">Find doctors and clinics based on your healthcare needs and location.</p></div>
-<div class="c"><div class="sn" style="color: #9CD3E8">02</div><h3 style="font-size: 19px; margin: 12px 0 6px">Explore</h3><p class="p" style="margin: 0">View profiles, specialisations, clinic information and ratings to make informed decisions.</p></div>
-<div class="c"><div class="sn" style="color: #9CD3E8">03</div><h3 style="font-size: 19px; margin: 12px 0 6px">Choose</h3><p class="p" style="margin: 0">Pick an in-person clinic visit or an online consultation through chat.</p></div>
-<div class="c"><div class="sn" style="color: #9CD3E8">04</div><h3 style="font-size: 19px; margin: 12px 0 6px">Connect</h3><p class="p" style="margin: 0">Book your clinic appointment or connect with a doctor through online consultation.</p></div>
-<div class="c"><div class="sn" style="color: #9CD3E8">05</div><h3 style="font-size: 19px; margin: 12px 0 6px">Get healthcare</h3><p class="p" style="margin: 0">Receive the right guidance through the consultation method you chose.</p></div>
-</div>
-</div>
-
-<div class="sec g">
-<div class="c" style="padding: 36px"><div class="k" style="color: #9CD3E8">Clinic appointments</div>
-<h2 class="h" style="font-size: 40px">Finding a doctor shouldn’t be complicated.</h2>
-<p class="p">DocQue helps patients discover clinics, explore doctors and book appointments conveniently.</p>
-<ul class="ul"><li>Find doctors nearby</li><li>Explore clinic information</li><li>Check available appointment options</li><li>Book appointments without unnecessary complications</li><li>Plan clinic visits more efficiently</li></ul></div>
-<div class="c" style="padding: 36px"><div class="k" style="color: #9CD3E8">Online consultation through chat</div>
-<h2 class="h" style="font-size: 40px">Not every visit needs a trip.</h2>
-<p class="p">DocQue aims to make connecting with doctors easier through online chat consultations.</p>
-<ul class="ul"><li>Discover doctors offering online consultations</li><li>Start a consultation through chat</li><li>Explain your health concerns</li><li>Communicate directly with the doctor</li><li>Receive medical guidance remotely</li></ul>
-<p class="p" style="margin: 18px 0 0; font-size: 14px">Online consultations are not a replacement for emergency medical care, or for physical examinations when required.</p></div>
-</div>
-
-<div class="sec g">
-<div id="patients" class="c" style="padding: 36px"><div class="k" style="color: #9CD3E8">For patients</div>
-<h2 class="h" style="font-size: 40px">Healthcare made more accessible and convenient.</h2>
-<ul class="ul"><li>Find suitable doctors and clinics</li><li>Make informed decisions through doctor information and ratings</li><li>Reduce the inconvenience of finding and accessing healthcare</li><li>Book clinic appointments</li><li>Connect with doctors through online chat consultations</li><li>Access healthcare services through one platform</li></ul></div>
-<div id="doctors" style="background: #fff; color: #05070A; border-radius: 22px; padding: 36px"><div class="k" style="color: #3C7A92">For doctors and clinics</div>
-<h2 class="h" style="font-size: 40px">A better way to connect with patients.</h2>
-<ul class="ul" style="color: #36424C"><li>Establish an online presence</li><li>Improve visibility among potential patients</li><li>Reach patients beyond your existing network</li><li>Receive appointment bookings through the platform</li><li>Offer online chat consultations</li><li>Build stronger connections with patients</li></ul>
-<p style="margin: 18px 0 0; font-size: 14px; color: #36424C">We aim to support healthcare professionals with digital tools that make patient access and communication easier.</p></div>
-</div>
-
-<div class="sec g" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px">
-<div><div class="k" style="color: #9CD3E8">Why DocQue?</div>
-<h2 class="h" style="font-size: 40px">Technology should make healthcare easier, not more complicated.</h2>
-<p class="p">Healthcare is an essential part of everyone’s life, but accessing it can be inconvenient. Patients may struggle to find the right doctor, spend considerable time arranging visits or find it hard to connect with healthcare professionals.</p>
-<p class="p">DocQue aims to address these challenges by bringing doctor discovery, clinic appointments and online consultations together.</p></div>
-<div><div class="k" style="color: #9CD3E8">Our vision</div>
-<h2 class="h" style="font-size: 40px">A connected healthcare ecosystem.</h2>
-<p class="p">We want discovering doctors, accessing clinics and communicating with healthcare professionals to become simple and convenient.</p>
-<p class="p">We want to make quality healthcare more accessible, particularly in growing towns and underserved communities. The future of healthcare is not just about hospitals and clinics. It is also about making the connection between patients and doctors easier.</p></div>
-</div>
-
-<div style="position: relative; margin-top: 88px; padding: 90px 32px 80px; text-align: center">
-<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 420px; background: radial-gradient(ellipse 50% 60% at 50% 100%, rgba(156,211,232,.3), transparent 70%)"></div>
-<div style="position: relative; max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; justify-content: center">
-<div style="flex: 1 1 380px"><h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 500; letter-spacing: -.02em; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.08; margin: 0 0 14px">Your healthcare journey starts with <em style="color: #9CD3E8">finding the right doctor.</em></h2>
-<p style="color: #B8C4CE; margin: 0">Discover doctors, explore clinics and connect with healthcare professionals through DocQue.</p></div>
-<div style="flex: 1 1 380px"><h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 500; letter-spacing: -.02em; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.08; margin: 0 0 14px">Be part of a more <em style="color: #9CD3E8">connected ecosystem.</em></h2>
-<p style="color: #B8C4CE; margin: 0">Join DocQue and make your services more accessible to patients.</p></div>
-</div>
-</div>
-
-<div id="contact" class="sec" style="position: relative; padding-bottom: 80px">
-<div class="k" style="color: #9CD3E8">Contact us</div>
-<h2 class="h">Questions, or interested in partnering with us?</h2>
-<p class="p" style="margin-bottom: 32px">We would love to hear from you.</p>
-<div class="g" style="grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))">
-<div class="c"><div class="k" style="color: #8FA0AD">Email</div><div style="margin-top: 8px">docquehelp@gmail.com</div></div>
-<div class="c"><div class="k" style="color: #8FA0AD">Phone / WhatsApp</div><div style="margin-top: 8px">8590608258</div></div>
-<div class="c"><div class="k" style="color: #8FA0AD">Social</div><div style="margin-top: 8px">@docqueapp</div></div>
-</div>
-</div>
-
-<div style="border-top: 1px solid #141D25; padding: 26px 32px; text-align: center; font-family: 'Space Grotesk', sans-serif; font-size: 12px; color: #6F808D">DocQue · 2026</div>
-
-</div>
-</body></html>
+<script src="/site.js" defer></script>
+</body>
+</html>
