@@ -22,7 +22,7 @@ em{font-style:normal}
 
 /* header + hero */
 .hero{position:relative}
-.beam{position:absolute;inset:0 0 auto 0;height:1000px;pointer-events:none;background:radial-gradient(ellipse 45% 55% at 50% 78%,rgba(156,211,232,.42),transparent 70%),repeating-linear-gradient(90deg,rgba(156,211,232,.07) 0 2px,transparent 2px 7px);-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent);animation:pulse 5s ease-in-out infinite}
+.beam{position:absolute;inset:0 0 auto 0;height:1000px;pointer-events:none;background:radial-gradient(ellipse 45% 55% at 50% 78%,rgba(156,211,232,.42),transparent 70%),repeating-linear-gradient(90deg,rgba(156,211,232,.07) 0 2px,transparent 2px 7px);-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
 nav.top{position:relative;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:22px 0}
 .brand{display:flex;align-items:center}
 .brand img{height:34px;width:auto;display:block;transition:transform .5s}
@@ -42,7 +42,7 @@ nav.top{position:relative;display:flex;flex-wrap:wrap;gap:16px;align-items:cente
 .hc{flex:2 1 520px;text-align:center;order:2}.stat.l{order:1}.stat.r{order:3}
 .hc>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.hc>:nth-child(2){animation-delay:.12s}.hc>:nth-child(3){animation-delay:.24s}
 h1{font-family:var(--font);font-weight:500;font-size:clamp(38px,6.4vw,76px);line-height:1.02;margin:0 0 26px;letter-spacing:-.03em}
-h1 em{background:linear-gradient(90deg,var(--accent),#fff,var(--accent));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite}
+h1 em{background:linear-gradient(90deg,var(--accent),#fff,var(--accent));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .lead{font-family:var(--font);font-size:15px;color:var(--soft);max-width:480px;margin:0 auto 30px}
 .cta{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;align-items:center}
 .b1{display:inline-block;background:var(--accent);color:var(--bg);font-weight:600;padding:16px 36px;border-radius:999px;border:0;font:600 16px Inter,sans-serif;cursor:pointer}
@@ -141,7 +141,7 @@ header.plain{max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;flex-
 
 @keyframes float{50%{translate:0 -10px}}
 @keyframes pulse{50%{opacity:.6}}
-@keyframes rise{from{opacity:0;translate:0 30px}to{opacity:1;translate:0 0}}
+@keyframes rise{from{translate:0 24px}to{translate:0 0}}
 @keyframes shine{to{background-position:200% 0}}
 .js .rv{opacity:0;translate:0 40px;transition:opacity .7s ease,translate .7s ease}
 .js .rv.in{opacity:1;translate:0 0}
